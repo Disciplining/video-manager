@@ -15,6 +15,11 @@ public class Main
 
     public static void main(String[] args)
     {
+        if (args.length == 0)
+        {
+            System.out.println("请输入参数");
+            return;
+        }
         sourceDirPath = args[0];
         destDirPath = args[1];
         if (!FileUtil.exist(sourceDirPath))
